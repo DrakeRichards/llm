@@ -278,8 +278,6 @@ impl ChatProvider for XAI {
             response_format,
         };
 
-        let body_text = serde_json::to_string(&body).unwrap();
-
         let mut request = self
             .client
             .post("https://api.x.ai/v1/chat/completions")
