@@ -279,7 +279,6 @@ impl ChatProvider for XAI {
         };
 
         let body_text = serde_json::to_string(&body).unwrap();
-        dbg!(body_text);
 
         let mut request = self
             .client
